@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDex Society</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 1rem;
+            overflow-x: hidden;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header {
+            margin: 20px 0;
+        }
+
+        .logo {
+            width: 150px;
+            opacity: 0.8; 
+            animation: fadeIn 2s ease-in-out, bounce 3s infinite; 
+            box-shadow: 0 0 20px 10px #00d4ff;
+            border-radius: 3px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        h1 {
+                font-size: 4em;
+                margin: 20px 0;
+                transition: text-shadow 0.3s ease;
+        }
+
+
+        h1:hover {
+            text-shadow: 0 0 20px #4bf0f3, 0 0 30px #4fefed; 
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin: 10px;
+            display: inline-block;
+            animation: bounceIn 2s ease-in-out;
+        }
+
+        .social-links img {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            animation: pulse 1.5s infinite;
+            border-radius: 10px;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes bounceIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images:/424425346_902117134980081_6597550768484446400_n.jpg" alt="ProDex Logo" class="logo">
+        <h1>ProDex</h1>
+    </header>
+    <section class="social-links">
+        <a href="https://www.instagram.com/prodex.iitkgp/" target="_blank">
+            <img src="/images:/instagram-logo.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/prodex.iitkgp" target="_blank">
+            <img src="/images:/facebook-6338507_1280.webp" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/company/prodex-iit-kharagpur/mycompany/" target="_blank">
+            <img src="/images:/linkedin.jpeg" alt="LinkedIn">
+        </a>
+        <a href="https://prodex-iitkgp.netlify.app">
+            <img src="/images:/424425346_902117134980081_6597550768484446400_n.jpg" alt="Website" target="_blank">
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDHRO3hYztqlZBHlihS13JsL_pdLFCcANmY81TGPwBeWY0Kw/viewform?usp=sf_link" target="_blank">
+            <img src="/images:/png-clipart-google-docs-form-google-purple-violet-thumbnail.png" alt="Google Form">
+        </a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
